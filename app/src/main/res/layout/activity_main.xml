@@ -8,6 +8,15 @@
     tools:context=".MainActivity"
     android:padding="16dp">
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16dp"
+        android:entries="@array/spinnerItemsToDo"
+        />
+
     <EditText
         android:id="@+id/editTextadd"
         android:layout_width="match_parent"
@@ -15,7 +24,8 @@
         android:ems="10"
         android:inputType="text"
         android:textSize="16dp"
-        android:hint="Enter a task" />
+        android:padding="16dp"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,14 +37,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add" />
+            android:text="@string/add" />
 
         <Button
             android:id="@+id/buttonClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Clear" />
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete" />
 
     </LinearLayout>
 
@@ -42,6 +59,8 @@
         android:id="@+id/listViewToDo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:padding="16px"
+        android:textSize="16dp"/>
 
 </LinearLayout>
